@@ -14,7 +14,7 @@ def intensity_from_sleep(hours_slept):
     elif hours_slept < 8:
         return ["moderate", "high"]
     else:
-        return ["low", "moderate", "high"]
+        return ["moderate", "high"]
     
 def get_next_muscle_group(last_workout_muscle):
     """
@@ -57,7 +57,7 @@ def recc_workout(free_time, muscle_group, free_equip, allowed_intensity, top_n=3
         "open space": ["open space"],
         "mat": ["open space", "mat"],
         "track/trail": ["track/trail"],
-        "gym": ["open space", "mat", "track/trail", "gym"]
+        "gym": ["open space", "mat", "gym"]
     }
     # modify to suit multiselect
     available_equipment = []
