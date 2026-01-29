@@ -1,6 +1,6 @@
 WORKOUTS = [
     {
-        "name": "Run - 10K Pace", 
+        "name": "Run - Moderate Pace", 
         "muscle group": "lower",
         "time": 30,
         "equipment": "track/trail",
@@ -157,4 +157,68 @@ WORKOUTS = [
         "equipment": "open space",
         "intensity": "moderate",
         "type": "strength"
-    }]
+    },
+    {
+      "name": "Full Body Mobility", 
+        "muscle group": "full body",
+        "time": 10,
+        "equipment": "open space",
+        "intensity": "light",
+        "type": "mobility"
+    },
+    {
+        "name": "Sprint Intervals", 
+        "muscle group": "lower",
+        "time": 25,
+        "equipment": "track/trail",
+        "intensity": "intense",
+        "type": "cardio"
+    },
+    {
+        "name": "Quick Jog, Moderate Pace", 
+        "muscle group": "lower",
+        "time": 15,
+        "equipment": "track/trail",
+        "intensity": "moderate",
+        "type": "cardio"
+    },
+    {
+        "name": "Incline Run", 
+        "muscle group": "lower",
+        "time": 5,
+        "equipment": "gym",
+        "intensity": "intense",
+        "type": "cardio"
+    },
+    {
+        "name": "Upper Body Dumbell Circuit", 
+        "muscle group": "upper",
+        "time": 45,
+        "equipment": "gym",
+        "intensity": "intense",
+        "type": "strength"
+    },
+    {
+        "name": "Yin Yoga", 
+        "muscle group": "full body",
+        "time": 45,
+        "equipment": "open space",
+        "intensity": "light",
+        "type": "mobility"
+    },
+    {
+        "name": "Yin Yoga", 
+        "muscle group": "full body",
+        "time": 15,
+        "equipment": "open space",
+        "intensity": "light",
+        "type": "mobility"
+    },
+    {
+        "name": "Yoga-Pilates", 
+        "muscle group": "core",
+        "time": 20,
+        "equipment": "mat",
+        "intensity": "moderate",
+        "type": "strength"
+    },]
