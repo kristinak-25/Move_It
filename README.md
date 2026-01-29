@@ -9,4 +9,5 @@ like time, equipment, and recently trained muscle groups.
 2. User state is collected prior to workout (available time, equipment, recent muscle groups, )
 3. Rules functions translate user state into constraints (allowed intensity, muscles to avoid)
 4. Workouts are filtered based on constraints
-5. One workout is selected and returned, optinally workout is stored
+5. One workout is selected and returned, optionally workout is stored
+
