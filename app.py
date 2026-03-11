@@ -8,13 +8,13 @@ def intensity_from_sleep(hours_slept):
     value for workout.
     """
     if hours_slept < 5:
-        return ["low"]
+        return ["Low"]
     elif hours_slept <7:
-        return ["low", "moderate"]
+        return ["Low", "Moderate"]
     elif hours_slept < 8:
-        return ["moderate", "high"]
+        return ["Moderate", "High"]
     else:
-        return ["moderate", "high"]
+        return ["Moderate", "High"]
     
 def get_next_muscle_group(last_workout_muscle):
     """
@@ -22,9 +22,9 @@ def get_next_muscle_group(last_workout_muscle):
     Avoids working the same muscle group twice in a row.
     """
     if last_workout_muscle is None:
-        return ["upper", "lower", "core", "full body"]
+        return ["Upper", "Lower", "Core", "Full Body"]
     # exclude last muscle worked
-    all_groups = ["upper", "lower", "core", "full body"]
+    all_groups = ["Upper", "Lower", "Core", "Full Body"]
     available_groups = [group for group in all_groups if group != last_workout_muscle]
     
     return available_groups
@@ -54,10 +54,10 @@ def recc_workout(free_time, muscle_group, free_equip, allowed_intensity, top_n=3
     """
     # setup equipment constraint
     equipment_access = {
-        "open space": ["open space"],
-        "mat": ["open space", "mat"],
-        "track/trail": ["track/trail"],
-        "gym": ["open space", "mat", "gym"]
+        "open space": ["Open space"],
+        "mat": ["Open space", "Mat"],
+        "track/trail": ["Track/Trail"],
+        "gym": ["Open space", "Mat", "Gym"]
     }
     # modify to suit multiselect
     available_equipment = []
@@ -128,7 +128,7 @@ def main():
         if had_previous == "Yes":
             last_muscle = st.selectbox(
                 "What muscle group did you work last?",
-                options=["upper", "lower", "core", "full body"]
+                options=["Upper", "Lower", "Core", "Full Body"]
             )
             
             if st.button("Save Previous Workout Info"):
@@ -138,7 +138,7 @@ def main():
                     "time": 0,
                     "intensity": "unknown"
                 })
-                st.success(f"Saved! We'll avoid {last_muscle} workouts today.")
+                st.success(f"Saved! We'll skip {last_muscle} workouts today.")
                 st.rerun()
         
         st.divider()
