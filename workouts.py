@@ -1,224 +1,160 @@
 WORKOUTS = [
     {
-        "name": "Run - Moderate Pace", 
-        "muscle group": "lower",
+        "name": "Run - 10K Pace", 
+        "muscle group": "Lower",
         "time": 30,
-        "equipment": "track/trail",
-        "intensity": "moderate",
-        "type": "cardio"
+        "equipment": "Track/Trail",
+        "intensity": "Moderate",
+        "type": "Cardio"
     }, 
     {
         "name": "Run - Incline", 
-        "muscle group": "lower",
+        "muscle group": "Lower",
         "time": 15,
-        "equipment": "gym",
-        "intensity": "intense",
-        "type": "cardio"
+        "equipment": "Gym",
+        "intensity": "High",
+        "type": "Cardio"
     },
     { 
         "name": "Indoor Cylcing - Zone 2", 
-        "muscle group": "lower",
+        "muscle group": "Lower",
         "time": 60,
-        "equipment": "gym",
-        "intensity": "light",
-        "type": "cardio"
+        "equipment": "Gym",
+        "intensity": "Light",
+        "type": "Cardio"
     }, 
     {
         "name": "Cycling Bootcamp", 
-        "muscle group": "full body",
+        "muscle group": "Full Body",
         "time": 60,
-        "equipment": "gym",
-        "intensity": "high",
-        "type": "cardio"
+        "equipment": "Gym",
+        "intensity": "High",
+        "type": "Cardio"
     },
     {
         "name": "Running Bootcamp", 
-        "muscle group": "lower",
+        "muscle group": "Lower",
         "time": 45,
-        "equipment": "gym",
-        "intensity": "high",
-        "type": "cardio"
+        "equipment": "Gym",
+        "intensity": "High",
+        "type": "Cardio"
     },
     {
         "name": "Yoga Vinyasa Flow", 
-        "muscle group": "full body",
+        "muscle group": "Full Body",
         "time": 30,
-        "equipment": "mat",
-        "intensity": "moderate",
-        "type": "mobility"
+        "equipment": "Mat",
+        "intensity": "Moderate",
+        "type": "Mobility"
     }, 
     {
         "name": "Lower body stretch", 
-        "muscle group": "lower",
+        "muscle group": "Lower",
         "time": 10,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
+        "equipment": "Open Space",
+        "intensity": "Light",
+        "type": "Mobility"
     },
     {
         "name": "Upper body stretch", 
-        "muscle group": "upper",
+        "muscle group": "Upper",
         "time": 5,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
+        "equipment": "Open Space",
+        "intensity": "Light",
+        "type": "Mobility"
     },
     {
         "name": "Full body stretch", 
-        "muscle group": "full body",
+        "muscle group": "Full Body",
         "time": 10,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
+        "equipment": "Open Space",
+        "intensity": "Light",
+        "type": "Mobility"
     },
     {
         "name": "Restorative Yoga", 
-        "muscle group": "full body",
+        "muscle group": "Full Body",
         "time": 30,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
+        "equipment": "Open Space",
+        "intensity": "Light",
+        "type": "Mobility"
     },
     {
         "name": "Restorative Yoga", 
-        "muscle group": "full body",
+        "muscle group": "Full Body",
         "time": 60,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
+        "equipment": "Open Space",
+        "intensity": "Light",
+        "type": "Mobility"
     },
     {   "name": "Pilates for Core Stability", 
-        "muscle group": "core",
+        "muscle group": "Core",
         "time": 10,
-        "equipment": "mat",
-        "intensity": "moderate",
-        "type": "strength"
+        "equipment": "Mat",
+        "intensity": "Moderate",
+        "type": "Strength"
     },
     {
         "name": "Pilates for Core Stability", 
-        "muscle group": "core",
+        "muscle group": "Core",
         "time": 15,
-        "equipment": "mat",
-        "intensity": "moderate",
-        "type": "strength"
+        "equipment": "Mat",
+        "intensity": "Moderate",
+        "type": "Strength"
     },
     {
         "name": "Pilates for Core Stability", 
-        "muscle group": "core",
+        "muscle group": "Core",
         "time": 30,
-        "equipment": "mat",
-        "intensity": "moderate",
-        "type": "strength"
+        "equipment": "Mat",
+        "intensity": "Moderate",
+        "type": "Strength"
     },
     {
         "name": "Quick Core", 
-        "muscle group": "core",
+        "muscle group": "Core",
         "time": 5,
-        "equipment": "open space",
-        "intensity": "moderate",
-             "type": "strength"
+        "equipment": "Open Space",
+        "intensity": "Moderate",
+        "type": "Strength"
     },
     {
         "name": "Intense Core", 
-        "muscle group": "core",
+        "muscle group": "Core",
         "time": 15,
-        "equipment": "mat",
-        "intensity": "high",
-        "type": "strength"
+        "equipment": "Mat",
+        "intensity": "High",
+        "type": "Strength"
     },
     {
         "name": "Upper Body Dumbell Circuit", 
-        "muscle group": "upper",
+        "muscle group": "Upper",
         "time": 30,
-        "equipment": "gym",
-        "intensity": "moderate",
-        "type": "strength"
+        "equipment": "Gym",
+        "intensity": "Moderate",
+        "type": "Strength"
     },
     {
         "name": "Bodyweight Upper Body Workout", 
-        "muscle group": "upper",
+        "muscle group": "Upper",
         "time": 15,
-        "equipment": "open space",
-        "intensity": "moderate",
-        "type": "strength"
+        "equipment": "Open Space",
+        "intensity": "Moderate",
+        "type": "Strength"
     },
     {
         "name": "Lower Body Strength", 
-        "muscle group": "lower",
+        "muscle group": "Lower",
         "time": 45,
-        "equipment": "gym",
-        "intensity": "high",
-        "type": "strength"
+        "equipment": "Gym",
+        "intensity": "High",
+        "type": "Strength"
     },
     {
         "name": "Bodyweight Legs and Glutes Workout", 
-        "muscle group": "lower",
+        "muscle group": "Lower",
         "time": 30,
-        "equipment": "open space",
-        "intensity": "moderate",
-        "type": "strength"
-    },
-    {
-      "name": "Full Body Mobility", 
-        "muscle group": "full body",
-        "time": 10,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
-    },
-    {
-        "name": "Sprint Intervals", 
-        "muscle group": "lower",
-        "time": 25,
-        "equipment": "track/trail",
-        "intensity": "intense",
-        "type": "cardio"
-    },
-    {
-        "name": "Quick Jog, Moderate Pace", 
-        "muscle group": "lower",
-        "time": 15,
-        "equipment": "track/trail",
-        "intensity": "moderate",
-        "type": "cardio"
-    },
-    {
-        "name": "Incline Run", 
-        "muscle group": "lower",
-        "time": 5,
-        "equipment": "gym",
-        "intensity": "intense",
-        "type": "cardio"
-    },
-    {
-        "name": "Upper Body Dumbell Circuit", 
-        "muscle group": "upper",
-        "time": 45,
-        "equipment": "gym",
-        "intensity": "intense",
-        "type": "strength"
-    },
-    {
-        "name": "Yin Yoga", 
-        "muscle group": "full body",
-        "time": 45,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
-    },
-    {
-        "name": "Yin Yoga", 
-        "muscle group": "full body",
-        "time": 15,
-        "equipment": "open space",
-        "intensity": "light",
-        "type": "mobility"
-    },
-    {
-        "name": "Yoga-Pilates", 
-        "muscle group": "core",
-        "time": 20,
-        "equipment": "mat",
-        "intensity": "moderate",
-        "type": "strength"
-    },]
+        "equipment": "Open Space",
+        "intensity": "Moderate",
+        "type": "Strength"
+    }]
