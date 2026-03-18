@@ -14,7 +14,7 @@ def intensity_from_sleep(hours_slept):
     elif hours_slept < 8:
         return ["Moderate", "High"]
     else:
-        return ["Moderate", "High"]
+        return ["Low", "Moderate", "High"]
     
 def get_next_muscle_group(last_workout_muscle):
     """
@@ -54,10 +54,10 @@ def recc_workout(free_time, muscle_group, free_equip, allowed_intensity, top_n=3
     """
     # setup equipment constraint
     equipment_access = {
-        "open space": ["Open space"],
-        "mat": ["Open space", "Mat"],
-        "track/trail": ["Track/Trail"],
-        "gym": ["Open space", "Mat", "Gym"]
+        "Open Space": ["Open Space"],
+        "Mat": ["Open Space", "Mat"],
+        "Track/Trail": ["Track/Trail"],
+        "Gym": ["Open Space", "Mat", "Track/Trail", "Gym"]
     }
     # modify to suit multiselect
     available_equipment = []
@@ -138,7 +138,7 @@ def main():
                     "time": 0,
                     "intensity": "unknown"
                 })
-                st.success(f"Saved! We'll skip {last_muscle} workouts today.")
+                st.success(f"Saved! We'll avoid {last_muscle} workouts today.")
                 st.rerun()
         
         st.divider()
@@ -150,17 +150,14 @@ def main():
     
     # current workout recc
     st.header("Your Next Workout")
-    col1, col2 = st.columns(2)
-    with col1:
-        free_time = st.number_input(
-        "Time Available (90 min max)?",
+    free_time = st.slider(
+        "Time Available (mins)?",
         min_value=5,
         max_value=90,
         value=30,
         step=1)
-    
-    with col2:
-        hours_slept = st.number_input(
+
+    hours_slept = st.slider(
         "Hours of Sleep?",
         min_value=1,
         max_value=15,
@@ -168,7 +165,7 @@ def main():
         step=1)
     
     st.markdown("Available Equipment (select all that apply)?")
-    equipment_options = ["open space", "mat", "track/trail", "gym"]
+    equipment_options = ["Open Space", "Mat", "Track/Trail", "Gym"]
     cols = st.columns(len(equipment_options))
     free_equip = []
 
@@ -228,9 +225,8 @@ def main():
         
         if st.session_state.workout_history:
             for i, w in enumerate(st.session_state.workout_history, 1):
-                if w['name'] != "Previous Workout":
-                    st.write(f"{i}. **{w['name']}**")
-                    st.caption(f"{w['muscle group']} • {w['time']}min • {w['intensity']}")
+                st.write(f"{i}. **{w['name']}**")
+                st.caption(f"{w['muscle group']} • {w['time']}min • {w['intensity']}")
         else:
             st.write("No workouts recorded yet!")
         
